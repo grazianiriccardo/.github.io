@@ -3,10 +3,11 @@
   Sito personale di Riccardo Graziani
 
   Come modificarlo: cerca "DA MODIFICARE" in questo file.
+  Quando il sito è pronto per essere trovato, cerca "DA TOGLIERE".
 
   File da caricare insieme a index.html, con questi nomi esatti (maiuscole comprese):
     photo.jpg     ritratto verticale, circa 600 x 750 px
-    Graziani_CV.pdf
+    Graziani_CV.pdf    versione pubblica, senza indirizzo di casa né numero di telefono
     Graziani_Vanschoonbeek_Who_Speaks_for_the_People.pdf
 
   Finché photo.jpg non c'è, al posto della foto compaiono le iniziali.
@@ -15,11 +16,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <!-- DA TOGLIERE quando il sito è pronto: chiede ai motori di ricerca di non indicizzare la pagina e di non seguirne i link -->
+  <meta name="robots" content="noindex, nofollow">
   <title>Riccardo Graziani | Economics, KU Leuven</title>
-  <meta name="description" content="Riccardo Graziani is a PhD researcher in economics at VIVES, KU Leuven, working on political economy and economic history: democratization and parliamentary representation in Belgium, 1880–1912.">
+  <meta name="description" content="Riccardo Graziani is a PhD researcher in economics at VIVES, KU Leuven, working on political economy, urban economics and economic history: democratization, parliamentary representation and transport networks.">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Riccardo Graziani">
-  <meta property="og:description" content="PhD researcher in economics at VIVES, KU Leuven. Political economy and economic history.">
+  <meta property="og:description" content="PhD researcher in economics at VIVES, KU Leuven. Political economy, urban economics and economic history.">
   <meta name="theme-color" content="#F4F6F2" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#121A16" media="(prefers-color-scheme: dark)">
   <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2032%2032%22%3E%3Cstyle%3E.s%7Bfill%3A%231F5C44%7D.r%7Bfill%3A%23A2312E%7D%40media%20%28prefers-color-scheme%3A%20dark%29%7B.s%7Bfill%3A%238CC7A8%7D.r%7Bfill%3A%23E58C85%7D%7D%3C/style%3E%3Ccircle%20class%3D%22s%22%20cx%3D%2210.00%22%20cy%3D%2223.00%22%20r%3D%221.6%22/%3E%3Ccircle%20class%3D%22s%22%20cx%3D%226.00%22%20cy%3D%2223.00%22%20r%3D%221.6%22/%3E%3Ccircle%20class%3D%22s%22%20cx%3D%222.20%22%20cy%3D%2223.00%22%20r%3D%221.6%22/%3E%3Ccircle%20class%3D%22s%22%20cx%3D%223.03%22%20cy%3D%2218.28%22%20r%3D%221.6%22/%3E%3Ccircle%20class%3D%22s%22%20cx%3D%227.34%22%20cy%3D%2218.00%22%20r%3D%221.6%22/%3E%3Ccircle%20class%3D%22s%22%20cx%3D%225.43%22%20cy%3D%2214.13%22%20r%3D%221.6%22/%3E%3Ccircle%20class%3D%22s%22%20cx%3D%2211.76%22%20cy%3D%2218.76%22%20r%3D%221.6%22/%3E%3Ccircle%20class%3D%22s%22%20cx%3D%2211.00%22%20cy%3D%2214.34%22%20r%3D%221.6%22/%3E%3Ccircle%20class%3D%22s%22%20cx%3D%229.10%22%20cy%3D%2211.05%22%20r%3D%221.6%22/%3E%3Ccircle%20class%3D%22s%22%20cx%3D%2213.60%22%20cy%3D%229.41%22%20r%3D%221.6%22/%3E%3Ccircle%20class%3D%22s%22%20cx%3D%2216.00%22%20cy%3D%2217.00%22%20r%3D%221.6%22/%3E%3Ccircle%20class%3D%22s%22%20cx%3D%2216.00%22%20cy%3D%2213.00%22%20r%3D%221.6%22/%3E%3Ccircle%20class%3D%22s%22%20cx%3D%2218.40%22%20cy%3D%229.41%22%20r%3D%221.6%22/%3E%3Ccircle%20class%3D%22s%22%20cx%3D%2221.00%22%20cy%3D%2214.34%22%20r%3D%221.6%22/%3E%3Ccircle%20class%3D%22s%22%20cx%3D%2222.90%22%20cy%3D%2211.05%22%20r%3D%221.6%22/%3E%3Ccircle%20class%3D%22s%22%20cx%3D%2220.24%22%20cy%3D%2218.76%22%20r%3D%221.6%22/%3E%3Ccircle%20class%3D%22s%22%20cx%3D%2226.57%22%20cy%3D%2214.13%22%20r%3D%221.6%22/%3E%3Ccircle%20class%3D%22s%22%20cx%3D%2224.66%22%20cy%3D%2218.00%22%20r%3D%221.6%22/%3E%3Ccircle%20class%3D%22s%22%20cx%3D%2228.97%22%20cy%3D%2218.28%22%20r%3D%221.6%22/%3E%3Ccircle%20class%3D%22s%22%20cx%3D%2222.00%22%20cy%3D%2223.00%22%20r%3D%221.6%22/%3E%3Ccircle%20class%3D%22s%22%20cx%3D%2226.00%22%20cy%3D%2223.00%22%20r%3D%221.6%22/%3E%3Ccircle%20class%3D%22s%22%20cx%3D%2229.80%22%20cy%3D%2223.00%22%20r%3D%221.6%22/%3E%3Ccircle%20class%3D%22r%22%20cx%3D%2216%22%20cy%3D%2221.2%22%20r%3D%222.3%22/%3E%3C/svg%3E">
@@ -307,16 +310,15 @@
       <circle class="rostrum" cx="60" cy="56.5" r="4"/>
     </svg>
       <h1>Riccardo Graziani</h1>
-      <!-- DA MODIFICARE: verifica la dicitura della tua posizione -->
-      <p class="role">PhD researcher in economics<br>VIVES, KU Leuven</p>
+      <p class="role">PhD researcher in economics<br>VIVES Research Centre, KU Leuven</p>
       <nav class="links" aria-label="Contact and profiles">
-        <!-- DA MODIFICARE: verifica l'indirizzo email (compare anche in fondo alla pagina) -->
         <a href="mailto:riccardo.graziani@kuleuven.be">Email</a>
         <a href="Graziani_CV.pdf">CV</a>
         <!-- DA MODIFICARE: incolla il link al tuo profilo Google Scholar, oppure cancella la riga -->
         <a href="https://scholar.google.com/citations?user=XXXXXXXX">Google Scholar</a>
         <!-- DA MODIFICARE: sostituisci USERNAME con il tuo nome utente GitHub, oppure cancella la riga -->
         <a href="https://github.com/USERNAME">GitHub</a>
+        <a href="https://www.linkedin.com/in/riccardo-graziani-2a2801192">LinkedIn</a>
       </nav>
       <figure class="portrait">
         <span class="initials" aria-hidden="true">RG</span>
@@ -327,7 +329,8 @@
     <!-- DA MODIFICARE: presentazione in bozza, adattala liberamente -->
     <section class="about" aria-label="About">
       <p class="lede">I study how democratization changed political representation, drawing on the parliamentary record of Belgium between 1880 and 1912.</p>
-      <p>My fields are political economy and economic history. I combine large-scale text data from parliamentary debates with difference-in-differences designs to study how institutions shape what legislators say and do.</p>
+      <p>My fields are political economy, urban economics and economic history. I build large-scale datasets of parliamentary speeches and laws, and combine machine learning with econometric methods to study political polarization and redistributive preferences. A second line of work uses geospatial data from historical maps to study transport networks, railways and regional economic integration.</p>
+      <p>Before my PhD, I studied economics at Bocconi University and at UCLouvain (joint MSc), and worked as a research assistant for James M. Snyder and Marco Tabellini at Harvard and for Stefano Gagliarducci at the University of Rome Tor Vergata.</p>
     </section>
 
     <section class="research" aria-labelledby="research-heading">
@@ -344,11 +347,27 @@
         </details>
       </article>
 
-      <h3>Work in progress</h3>
       <article class="paper">
-        <!-- Quando avrai una bozza da condividere: sposta questo paper tra i working papers, con link al PDF e abstract -->
+        <!-- Quando c'è il PDF, collega il titolo e aggiungi l'abstract come nel primo paper -->
         <h4>Did Democratization Divide the Elite?</h4>
         <p class="authors">with Jakob Vanschoonbeek</p>
+      </article>
+      <article class="paper">
+        <!-- Quando c'è il PDF, collega il titolo e aggiungi l'abstract come nel primo paper -->
+        <h4>Anti-Revolutionary Roads? The Political Effects of Belgium’s Workmen’s Trains</h4>
+        <p class="authors">with Jakob Vanschoonbeek</p>
+      </article>
+
+      <h3>Data papers</h3>
+      <article class="paper">
+        <!-- DA MODIFICARE: aggiungi i coautori, se ci sono, e il link al dataset quando sarà pubblico -->
+        <h4>The Belgian Chamber Debates Dataset: Speeches, Roll-Call Votes and Member Biographies, 1831–2025</h4>
+      </article>
+
+      <h3>Work in progress</h3>
+      <article class="paper">
+        <!-- Titolo provvisorio. Progetto da solo autore: niente riga dei coautori -->
+        <h4>Two Centuries of Partisan Speech: Polarization in the Belgian Chamber, 1831–2025</h4>
       </article>
     </section>
 
@@ -363,7 +382,7 @@
     -->
 
     <footer class="colophon">
-      <p>VIVES, KU Leuven, Belgium</p>
+      <p>VIVES Research Centre, KU Leuven, Belgium</p>
       <p><a href="mailto:riccardo.graziani@kuleuven.be">riccardo.graziani@kuleuven.be</a></p>
     </footer>
 
