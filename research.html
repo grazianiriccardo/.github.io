@@ -1,0 +1,376 @@
+<!doctype html>
+<!--
+  Pagina della ricerca del sito di Riccardo Graziani.
+
+  I titoli rimandano ai PDF degli abstract. Quando avrai i paper completi, carica i PDF
+  e cambia il nome del file nei link qui sotto.
+  Lo stile è lo stesso di index.html: se tocchi un colore, cambialo in tutti e due i file.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <!-- DA TOGLIERE quando il sito è pronto: chiede ai motori di ricerca di non indicizzare la pagina e di non seguirne i link -->
+  <meta name="robots" content="noindex, nofollow">
+  <title>Research | Riccardo Graziani</title>
+  <meta name="description" content="Working papers, data papers and work in progress by Riccardo Graziani on parliamentary speech, electoral reform and political representation in Belgium.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Research | Riccardo Graziani">
+  <meta name="theme-color" content="#FFFFFF">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2032%2032%22%3E%3Cstyle%3E.s%7Bfill%3A%231F5C44%7D.r%7Bfill%3A%23A2312E%7D%40media%20%28prefers-color-scheme%3A%20dark%29%7B.s%7Bfill%3A%238CC7A8%7D.r%7Bfill%3A%23E58C85%7D%7D%3C/style%3E%3Ccircle%20class%3D%22s%22%20cx%3D%2210.00%22%20cy%3D%2223.00%22%20r%3D%221.6%22/%3E%3Ccircle%20class%3D%22s%22%20cx%3D%226.00%22%20cy%3D%2223.00%22%20r%3D%221.6%22/%3E%3Ccircle%20class%3D%22s%22%20cx%3D%222.20%22%20cy%3D%2223.00%22%20r%3D%221.6%22/%3E%3Ccircle%20class%3D%22s%22%20cx%3D%223.03%22%20cy%3D%2218.28%22%20r%3D%221.6%22/%3E%3Ccircle%20class%3D%22s%22%20cx%3D%227.34%22%20cy%3D%2218.00%22%20r%3D%221.6%22/%3E%3Ccircle%20class%3D%22s%22%20cx%3D%225.43%22%20cy%3D%2214.13%22%20r%3D%221.6%22/%3E%3Ccircle%20class%3D%22s%22%20cx%3D%2211.76%22%20cy%3D%2218.76%22%20r%3D%221.6%22/%3E%3Ccircle%20class%3D%22s%22%20cx%3D%2211.00%22%20cy%3D%2214.34%22%20r%3D%221.6%22/%3E%3Ccircle%20class%3D%22s%22%20cx%3D%229.10%22%20cy%3D%2211.05%22%20r%3D%221.6%22/%3E%3Ccircle%20class%3D%22s%22%20cx%3D%2213.60%22%20cy%3D%229.41%22%20r%3D%221.6%22/%3E%3Ccircle%20class%3D%22s%22%20cx%3D%2216.00%22%20cy%3D%2217.00%22%20r%3D%221.6%22/%3E%3Ccircle%20class%3D%22s%22%20cx%3D%2216.00%22%20cy%3D%2213.00%22%20r%3D%221.6%22/%3E%3Ccircle%20class%3D%22s%22%20cx%3D%2218.40%22%20cy%3D%229.41%22%20r%3D%221.6%22/%3E%3Ccircle%20class%3D%22s%22%20cx%3D%2221.00%22%20cy%3D%2214.34%22%20r%3D%221.6%22/%3E%3Ccircle%20class%3D%22s%22%20cx%3D%2222.90%22%20cy%3D%2211.05%22%20r%3D%221.6%22/%3E%3Ccircle%20class%3D%22s%22%20cx%3D%2220.24%22%20cy%3D%2218.76%22%20r%3D%221.6%22/%3E%3Ccircle%20class%3D%22s%22%20cx%3D%2226.57%22%20cy%3D%2214.13%22%20r%3D%221.6%22/%3E%3Ccircle%20class%3D%22s%22%20cx%3D%2224.66%22%20cy%3D%2218.00%22%20r%3D%221.6%22/%3E%3Ccircle%20class%3D%22s%22%20cx%3D%2228.97%22%20cy%3D%2218.28%22%20r%3D%221.6%22/%3E%3Ccircle%20class%3D%22s%22%20cx%3D%2222.00%22%20cy%3D%2223.00%22%20r%3D%221.6%22/%3E%3Ccircle%20class%3D%22s%22%20cx%3D%2226.00%22%20cy%3D%2223.00%22%20r%3D%221.6%22/%3E%3Ccircle%20class%3D%22s%22%20cx%3D%2229.80%22%20cy%3D%2223.00%22%20r%3D%221.6%22/%3E%3Ccircle%20class%3D%22r%22%20cx%3D%2216%22%20cy%3D%2221.2%22%20r%3D%222.3%22/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Schibsted+Grotesk:wght@400;500;600&display=swap">
+  <style>
+/* Stile del sito di Riccardo Graziani.
+   Questo blocco è incorporato sia in index.html sia in research.html:
+   se cambi un colore, cambialo in tutti e due i file. */
+
+:root {
+  --paper: #FFFFFF;
+  --ink: #16211C;
+  --muted: #4A5750;
+  --chamber: #1B5740;
+  --senate: #9B2B28;
+  --rule: #CFD8D2;
+  --tint: #F1F3F2;
+  --underline: #8FB2A0;
+  --select: rgba(155, 43, 40, 0.16);
+  --display: "Old Standard TT", "Iowan Old Style", Georgia, "Times New Roman", serif;
+  --text: "Schibsted Grotesk", system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  color-scheme: light;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--text);
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+::selection { background: var(--select); }
+a { color: var(--chamber); text-decoration-thickness: 1px; text-underline-offset: 0.22em; }
+a:hover { text-decoration-thickness: 2px; }
+a:focus-visible, summary:focus-visible {
+  outline: 2px solid var(--senate);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+.visually-hidden {
+  position: absolute; width: 1px; height: 1px;
+  margin: -1px; padding: 0; overflow: hidden;
+  clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+}
+
+/* Due colonne: a sinistra chi sei, a destra il contenuto */
+.page {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 17rem;
+  gap: clamp(1.75rem, 5vw, 3.5rem);
+  align-items: start;
+  max-width: 60rem;
+  margin: 0 auto;
+  padding:
+    clamp(2.5rem, 6vw, 4rem)
+    max(1.5rem, env(safe-area-inset-right))
+    max(3rem, env(safe-area-inset-bottom))
+    max(1.5rem, env(safe-area-inset-left));
+}
+
+/* Colonna di sinistra */
+.hemicycle { display: block; width: 6.5rem; height: auto; margin: 0 0 1rem; overflow: visible; }
+.seat, .rostrum { transform-box: fill-box; transform-origin: center; }
+.seat { fill: var(--chamber); animation: take-seat 420ms ease-out backwards; animation-delay: calc(var(--i) * 11ms); }
+.rostrum { fill: var(--senate); animation: take-seat 520ms ease-out 950ms backwards; }
+@keyframes take-seat { from { opacity: 0; transform: scale(0.3); } }
+
+.sitename {
+  margin: 0;
+  font-family: var(--display);
+  font-weight: 400;
+  font-size: clamp(2rem, 3.6vw, 2.5rem);
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+}
+.sitename a { color: var(--ink); text-decoration: none; }
+.sitename a:hover { text-decoration: underline; text-decoration-thickness: 1px; }
+.role { margin: 0.8rem 0 0; color: var(--muted); line-height: 1.45; }
+
+.portrait {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  margin: 1.5rem 0 0;
+  overflow: hidden;
+  border-radius: 3px;
+  background: var(--tint);
+}
+.portrait img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.initials { font-family: var(--display); font-size: 2.5rem; color: var(--chamber); }
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem 1.25rem;
+  margin-top: 1.25rem;
+  font-weight: 500;
+}
+
+/* Colonna di destra */
+.mainnav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 1.75rem;
+  padding-bottom: 0.85rem;
+  margin-bottom: clamp(1.5rem, 3vw, 2.25rem);
+  border-bottom: 1px solid var(--rule);
+  font-weight: 500;
+}
+.mainnav a[aria-current="page"] { color: var(--ink); text-decoration: none; }
+
+.bio p { margin: 0 0 1.1rem; max-width: 38rem; }
+.bio p:last-child { margin-bottom: 0; }
+.news { margin-top: 1.5rem; }
+
+/* Pagina della ricerca */
+.pagetitle {
+  margin: 0 0 1.5rem;
+  font-family: var(--display);
+  font-weight: 400;
+  font-size: clamp(1.75rem, 3.2vw, 2.125rem);
+  line-height: 1.15;
+}
+.group {
+  margin: 2.25rem 0 1.1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--muted);
+}
+.group:first-of-type { margin-top: 0; }
+.paper { margin: 0 0 1.75rem; max-width: 40rem; }
+.paper-title {
+  margin: 0;
+  font-family: var(--display);
+  font-weight: 400;
+  font-size: 1.3125rem;
+  line-height: 1.3;
+}
+.paper-title a { color: var(--ink); text-decoration-color: var(--underline); }
+.paper-title a:hover { text-decoration-color: var(--chamber); }
+.authors { margin: 0.35rem 0 0; color: var(--muted); }
+.presented { margin: 0.2rem 0 0; color: var(--muted); font-size: 0.9375rem; }
+
+.abstract { margin-top: 0.55rem; }
+.abstract summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  list-style: none;
+  color: var(--chamber);
+  font-weight: 500;
+}
+.abstract summary::-webkit-details-marker { display: none; }
+.abstract summary::before {
+  content: "";
+  width: 0.7rem;
+  height: 0.7rem;
+  background:
+    linear-gradient(currentColor, currentColor) center / 100% 1.5px no-repeat,
+    linear-gradient(currentColor, currentColor) center / 1.5px 100% no-repeat;
+  transition: transform 200ms ease;
+}
+.abstract[open] summary::before { transform: rotate(45deg); }
+.abstract p {
+  margin: 0.75rem 0 0;
+  max-width: 38rem;
+  text-align: justify;
+  hyphens: auto;
+}
+
+/* Piè di pagina */
+.colophon {
+  margin-top: clamp(3rem, 7vw, 4.5rem);
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+  font-size: 0.9375rem;
+}
+.colophon p { margin: 0; }
+.colophon a { color: var(--muted); }
+
+/* Telefono: una colonna sola */
+@media (max-width: 48rem) {
+  .page { display: flex; flex-direction: column; gap: 2rem; }
+  .sidebar { order: -1; }
+  .portrait { max-width: 15rem; }
+  .hemicycle { width: 5.5rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .seat, .rostrum { animation: none; }
+  .abstract summary::before { transition: none; }
+}
+
+  </style>
+</head>
+<body>
+  <main class="page">
+
+
+    <div class="content">
+
+      <nav class="mainnav" aria-label="Pages">
+        <a href="index.html">Home</a>
+        <a href="research.html" aria-current="page">Research</a>
+      </nav>
+
+      <section class="research" aria-labelledby="research-heading">
+        <h1 class="pagetitle" id="research-heading">Research</h1>
+
+        <h2 class="group">Working papers</h2>
+        <article class="paper">
+          <h3 class="paper-title"><a href="Graziani_Vanschoonbeek_Who_Speaks_abstract.pdf">Who Speaks for the People? Electoral Reforms, Parliamentary Speech, and Legislative Behaviour in Belgium, 1880–1912</a></h3>
+          <p class="authors">with Jakob Vanschoonbeek</p>
+          <p class="presented">Presented at the ‘Text-as-data’ in Economics Workshop, University of Bath (July 2026), and at DiPaDA 2026, University of Ljubljana (September 2026).</p>
+          <details class="abstract">
+            <summary>Abstract</summary>
+            <p>Does extending the franchise change what a parliament attends to, and if so, does it work by changing the behaviour of the politicians already in office or by changing who holds office? We study this question in Belgium, which introduced plural male suffrage in 1894 and proportional representation in 1900, using a new dataset that links the plenary interventions of both chambers of parliament between 1880 and 1912 to the speaker’s party and constituency, and to the bills that members introduced. The share of each intervention devoted to labour and social policy is measured by a transformer classifier trained for this corpus and validated against blind human coding. Because its eligibility census prevented working-class candidates from entering the Senate, the difference between the two chambers identifies the Chamber’s differential response to electoral exposure, net of shocks common to both chambers, such as the strikes and unrest that produced the reforms. After enfranchisement, the Chamber’s attention to the social question rose by 4.5 percentage points relative to the Senate’s, on a base of 7.9, everywhere in the country and mainly among sitting deputies. Proportional representation produced no aggregate shift but a large effect in the coalfields, where it reopened seats the majoritarian rule had handed to the socialists. It was driven by the entry of new members. Social bills deposited by Catholic and Liberal members rose after 1894, mostly among Catholics, and again after 1900, among Liberals. Enfranchisement thus raised attention to the social question across the country, while proportional representation restored it in the coalfields through the members it elected. Which channel operated was set by the part of the electoral system each reform changed.</p>
+          </details>
+        </article>
+        <article class="paper">
+          <h3 class="paper-title"><a href="Graziani_Vanschoonbeek_One_Reform_abstract.pdf">One Reform Divided the Elite, the Other Replaced It: Electoral Reform and Parliamentary Speech in the Belgian Belle Époque, 1880–1912</a></h3>
+          <p class="authors">with Jakob Vanschoonbeek</p>
+          <details class="abstract">
+            <summary>Abstract</summary>
+            <p>What makes a governing elite pull apart? Explanations of elite polarization emphasize demand-side drivers acting on the electorate, while the electoral institutions that structure competition figure as objects of elite choice rather than as causes of elite behaviour. We ask whether electoral reform can itself divide a governing elite, using two Belgian reforms that fall on opposite sides of that divide: plural manhood suffrage (1894), which reshaped the electorate, and proportional representation (1900), which reshaped how votes become seats. We measure elite polarization directly from parliamentary speech, applying the leave-out partisanship estimator of Gentzkow et al. (2019) to all plenary debates of both houses, 490,002 interventions over three decades. Identification exploits Belgium’s imperfect bicameralism as a difference in exposure: both houses were returned by the same enlarged electorate, but candidacy rules the reforms left untouched kept the new competitor out of the upper house, so the Chamber debated with socialists in it and the Senate did not; the contrast nets out the national shocks common to both. The reaction is asymmetric. Plural suffrage produced a rise in Catholic–Liberal distinctiveness that is timed to the reform—the 1894 break is the largest of the fifteen feasible cutoff dates—persistent to the end of the window, and driven by the within-politician adaptation of sitting members—Catholic incumbents in particular—rather than by turnover; the divergence is overwhelmingly within-topic, and largest on labour and social policy. Proportional representation did not move that distance. What it moved was the composition of the chamber: the post-1900 divergence loads on entrants rather than on sitting members, the coal districts return Catholic members who had all but vanished from them after 1894—seven deputies between the reforms, thirty-nine after—and our companion study finds the same recomposition channel on the salience of labour (Graziani &amp; Vanschoonbeek, 2026). We do not read the flat Catholic–Liberal coefficient as an estimated zero: on that axis the bicameral contrast is attenuated by construction, so what we can say is that the rule change left no trace on the distance between the governing parties while visibly changing who sat between them. The two reforms acted on different margins. Enfranchisement changed how the sitting elite spoke; proportionality changed who was there to speak.</p>
+          </details>
+        </article>
+        <article class="paper">
+          <h3 class="paper-title">Anti-Revolutionary Roads? The Political Effects of Belgium’s Workmen’s Trains</h3>
+          <p class="authors">with Jakob Vanschoonbeek</p>
+          <details class="abstract">
+            <summary>Abstract</summary>
+            <p>Between 1885 and 1910 Belgium built one of the world’s densest light rail networks, partly as an instrument of political containment: the governing Catholic and Liberal parties hoped that letting workers reach city jobs while living in the countryside would shield them from the rising socialist movement, while the socialists hoped the same connectivity would carry their ideas into the hinterland. Using newly assembled archival data on the network, demography, commuting, and local elections, I develop a quantitative spatial political economy model of location, commuting, and political choices to adjudicate between the two views. Because the political effect runs partly through the endogenous reallocation of the electorate, I identify it from the unexpected component of light-rail-induced gains in job market access and show that the network moved location and commuting alone, leaving wages and rents unchanged. It modestly tempered urbanisation, lowering agglomeration populations by up to two per cent, yet raised socialist vote shares where access improved most. Aggregated through the D’Hondt seat allocation rule, the network accounts for three parliamentary seats that passed to the left rather than the Catholics, slimming the governing majority from a counterfactual thirteen seats to seven. The incumbents’ counter-revolutionary instrument, in short, modestly hastened the rise it was built to forestall.</p>
+          </details>
+        </article>
+
+        <h2 class="group">Data papers</h2>
+        <article class="paper">
+          <h3 class="paper-title"><a href="Graziani_Belgian_Chamber_Debates_abstract.pdf">The Belgian Chamber Debates Dataset: Speeches, Roll-Call Votes and Member Biographies, 1831–2025</a></h3>
+          <details class="abstract">
+            <summary>Abstract</summary>
+            <p>In this Data Descriptor, we introduce a dataset on the plenary speeches of the Belgian Chamber of Representatives and the background characteristics of the members who speak in it. The database includes all plenary speeches from the first sitting of the Chamber, in 1831, to the end of 2025, linked to the members and ministers who delivered them, together with the roll-call votes cast in the same sittings. These data have been used in previous studies to analyze how plural voting and proportional representation changed what the Chamber talked about and how far apart its parties spoke. The long time period, from census suffrage to the federal state, makes it possible to study how historical changes are reflected in parliamentary speeches.</p>
+          </details>
+        </article>
+
+        <h2 class="group">Selected Work in progress</h2>
+        <article class="paper">
+          <h3 class="paper-title"><a href="Graziani_Partisanship_Belgian_Speech_abstract.pdf">Partisanship in Belgian Parliamentary Speech: Evidence from the Chamber of Representatives, 1831–2025</a></h3>
+          <details class="abstract">
+            <summary>Abstract</summary>
+            <p>How polarized has Belgian politics been over the long run, and how did partisanship respond to the extensions of the suffrage, to proportional representation and to the split of the parties along linguistic lines? This project measures partisanship in the speeches of the Belgian Chamber of Representatives from its first sitting in 1831 to 2025, with the method that Gentzkow, Shapiro and Taddy (2019) developed for the US Congress and that Simola, Nieminen and Tukiainen (2025) applied to a century of Finnish parliamentary speech. Partisanship is the expected posterior probability that a neutral observer, after hearing one phrase of a member’s speech, places on the member’s true party. The data are the Belgian Chamber Debates dataset (Graziani 2026): more than two million speeches linked to the speaker’s party, district and biography. Belgium allows three extensions of the existing evidence. The series begins under census suffrage, so it spans the whole transition from an elite electorate to mass democracy. The party system grew out of three cleavages—religious, socioeconomic and linguistic—that can be measured as separate splits. And the debates are held in two languages, so partisanship has to be separated from language itself.</p>
+          </details>
+        </article>
+      </section>
+
+      <footer class="colophon">
+        <p>VIVES Research Centre, KU Leuven, Leuven, Belgium &nbsp;||&nbsp; <a href="mailto:riccardo.graziani@kuleuven.be">riccardo.graziani@kuleuven.be</a></p>
+      </footer>
+
+    </div>
+
+    <header class="sidebar">
+      <svg class="hemicycle" viewBox="0 0 120 64" aria-hidden="true" focusable="false">
+      <circle class="seat" style="--i:0" cx="38.00" cy="60.00" r="2.7"/>
+      <circle class="seat" style="--i:1" cx="30.00" cy="60.00" r="2.7"/>
+      <circle class="seat" style="--i:2" cx="22.00" cy="60.00" r="2.7"/>
+      <circle class="seat" style="--i:3" cx="14.00" cy="60.00" r="2.7"/>
+      <circle class="seat" style="--i:4" cx="6.00" cy="60.00" r="2.7"/>
+      <circle class="seat" style="--i:5" cx="6.66" cy="51.55" r="2.7"/>
+      <circle class="seat" style="--i:6" cx="14.78" cy="51.55" r="2.7"/>
+      <circle class="seat" style="--i:7" cx="22.95" cy="51.54" r="2.7"/>
+      <circle class="seat" style="--i:8" cx="31.22" cy="51.55" r="2.7"/>
+      <circle class="seat" style="--i:9" cx="8.64" cy="43.31" r="2.7"/>
+      <circle class="seat" style="--i:10" cx="17.11" cy="43.38" r="2.7"/>
+      <circle class="seat" style="--i:11" cx="39.67" cy="51.58" r="2.7"/>
+      <circle class="seat" style="--i:12" cx="25.76" cy="43.51" r="2.7"/>
+      <circle class="seat" style="--i:13" cx="11.89" cy="35.48" r="2.7"/>
+      <circle class="seat" style="--i:14" cx="20.89" cy="35.78" r="2.7"/>
+      <circle class="seat" style="--i:15" cx="34.76" cy="43.78" r="2.7"/>
+      <circle class="seat" style="--i:16" cx="16.31" cy="28.26" r="2.7"/>
+      <circle class="seat" style="--i:17" cx="30.29" cy="36.31" r="2.7"/>
+      <circle class="seat" style="--i:18" cx="26.01" cy="29.01" r="2.7"/>
+      <circle class="seat" style="--i:19" cx="44.44" cy="44.44" r="2.7"/>
+      <circle class="seat" style="--i:20" cx="21.82" cy="21.82" r="2.7"/>
+      <circle class="seat" style="--i:21" cx="40.35" cy="37.33" r="2.7"/>
+      <circle class="seat" style="--i:22" cx="36.31" cy="30.29" r="2.7"/>
+      <circle class="seat" style="--i:23" cx="32.28" cy="23.29" r="2.7"/>
+      <circle class="seat" style="--i:24" cx="28.26" cy="16.31" r="2.7"/>
+      <circle class="seat" style="--i:25" cx="35.48" cy="11.89" r="2.7"/>
+      <circle class="seat" style="--i:26" cx="39.50" cy="18.82" r="2.7"/>
+      <circle class="seat" style="--i:27" cx="43.51" cy="25.76" r="2.7"/>
+      <circle class="seat" style="--i:28" cx="47.54" cy="32.71" r="2.7"/>
+      <circle class="seat" style="--i:29" cx="51.58" cy="39.67" r="2.7"/>
+      <circle class="seat" style="--i:30" cx="43.31" cy="8.64" r="2.7"/>
+      <circle class="seat" style="--i:31" cx="47.41" cy="15.76" r="2.7"/>
+      <circle class="seat" style="--i:32" cx="51.54" cy="22.95" r="2.7"/>
+      <circle class="seat" style="--i:33" cx="51.55" cy="6.66" r="2.7"/>
+      <circle class="seat" style="--i:34" cx="55.73" cy="30.31" r="2.7"/>
+      <circle class="seat" style="--i:35" cx="55.76" cy="14.20" r="2.7"/>
+      <circle class="seat" style="--i:36" cx="60.00" cy="38.00" r="2.7"/>
+      <circle class="seat" style="--i:37" cx="60.00" cy="22.00" r="2.7"/>
+      <circle class="seat" style="--i:38" cx="60.00" cy="6.00" r="2.7"/>
+      <circle class="seat" style="--i:39" cx="64.24" cy="14.20" r="2.7"/>
+      <circle class="seat" style="--i:40" cx="64.27" cy="30.31" r="2.7"/>
+      <circle class="seat" style="--i:41" cx="68.45" cy="6.66" r="2.7"/>
+      <circle class="seat" style="--i:42" cx="68.46" cy="22.95" r="2.7"/>
+      <circle class="seat" style="--i:43" cx="72.59" cy="15.76" r="2.7"/>
+      <circle class="seat" style="--i:44" cx="76.69" cy="8.64" r="2.7"/>
+      <circle class="seat" style="--i:45" cx="68.42" cy="39.67" r="2.7"/>
+      <circle class="seat" style="--i:46" cx="72.46" cy="32.71" r="2.7"/>
+      <circle class="seat" style="--i:47" cx="76.49" cy="25.76" r="2.7"/>
+      <circle class="seat" style="--i:48" cx="80.50" cy="18.82" r="2.7"/>
+      <circle class="seat" style="--i:49" cx="84.52" cy="11.89" r="2.7"/>
+      <circle class="seat" style="--i:50" cx="91.74" cy="16.31" r="2.7"/>
+      <circle class="seat" style="--i:51" cx="87.72" cy="23.29" r="2.7"/>
+      <circle class="seat" style="--i:52" cx="83.69" cy="30.29" r="2.7"/>
+      <circle class="seat" style="--i:53" cx="79.65" cy="37.33" r="2.7"/>
+      <circle class="seat" style="--i:54" cx="75.56" cy="44.44" r="2.7"/>
+      <circle class="seat" style="--i:55" cx="98.18" cy="21.82" r="2.7"/>
+      <circle class="seat" style="--i:56" cx="93.99" cy="29.01" r="2.7"/>
+      <circle class="seat" style="--i:57" cx="89.71" cy="36.31" r="2.7"/>
+      <circle class="seat" style="--i:58" cx="103.69" cy="28.26" r="2.7"/>
+      <circle class="seat" style="--i:59" cx="85.24" cy="43.78" r="2.7"/>
+      <circle class="seat" style="--i:60" cx="99.11" cy="35.78" r="2.7"/>
+      <circle class="seat" style="--i:61" cx="108.11" cy="35.48" r="2.7"/>
+      <circle class="seat" style="--i:62" cx="94.24" cy="43.51" r="2.7"/>
+      <circle class="seat" style="--i:63" cx="80.33" cy="51.58" r="2.7"/>
+      <circle class="seat" style="--i:64" cx="102.89" cy="43.38" r="2.7"/>
+      <circle class="seat" style="--i:65" cx="111.36" cy="43.31" r="2.7"/>
+      <circle class="seat" style="--i:66" cx="88.78" cy="51.55" r="2.7"/>
+      <circle class="seat" style="--i:67" cx="97.05" cy="51.54" r="2.7"/>
+      <circle class="seat" style="--i:68" cx="105.22" cy="51.55" r="2.7"/>
+      <circle class="seat" style="--i:69" cx="113.34" cy="51.55" r="2.7"/>
+      <circle class="seat" style="--i:70" cx="82.00" cy="60.00" r="2.7"/>
+      <circle class="seat" style="--i:71" cx="90.00" cy="60.00" r="2.7"/>
+      <circle class="seat" style="--i:72" cx="98.00" cy="60.00" r="2.7"/>
+      <circle class="seat" style="--i:73" cx="106.00" cy="60.00" r="2.7"/>
+      <circle class="seat" style="--i:74" cx="114.00" cy="60.00" r="2.7"/>
+      <circle class="rostrum" cx="60" cy="56.5" r="4"/>
+    </svg>
+      <p class="sitename"><a href="index.html">Riccardo Graziani</a></p>
+      <p class="role">PhD researcher in Economics<br>VIVES Research Centre, KU Leuven</p>
+
+
+    </header>
+  </main>
+</body>
+</html>
