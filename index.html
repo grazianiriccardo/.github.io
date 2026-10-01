@@ -82,7 +82,7 @@ a:focus-visible, summary:focus-visible {
 /* Due colonne: a sinistra chi sei, a destra il contenuto */
 .page {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 17rem;
+  grid-template-columns: 17rem minmax(0, 1fr);
   gap: clamp(1.75rem, 5vw, 3.5rem);
   align-items: start;
   max-width: 60rem;
@@ -147,7 +147,7 @@ a:focus-visible, summary:focus-visible {
 }
 .mainnav a[aria-current="page"] { color: var(--ink); text-decoration: none; }
 
-.bio p { margin: 0 0 1.1rem; max-width: 38rem; }
+.bio p { margin: 0 0 1.1rem; max-width: 38rem; text-align: justify; hyphens: auto; }
 .bio p:last-child { margin-bottom: 0; }
 .news { margin-top: 1.5rem; }
 
@@ -177,7 +177,7 @@ a:focus-visible, summary:focus-visible {
 .paper-title a { color: var(--ink); text-decoration-color: var(--underline); }
 .paper-title a:hover { text-decoration-color: var(--chamber); }
 .authors { margin: 0.35rem 0 0; color: var(--muted); }
-.presented { margin: 0.2rem 0 0; color: var(--muted); font-size: 0.9375rem; }
+.jmp { margin: 0.25rem 0 0; font-weight: 600; font-size: 0.9375rem; }
 
 .abstract { margin-top: 0.55rem; }
 .abstract summary {
@@ -236,30 +236,6 @@ a:focus-visible, summary:focus-visible {
 <body>
   <main class="page">
 
-
-    <div class="content">
-
-      <nav class="mainnav" aria-label="Pages">
-        <a href="index.html" aria-current="page">Home</a>
-        <a href="research.html">Research</a>
-      </nav>
-
-      <!-- DA MODIFICARE: presentazione, adattala liberamente -->
-      <section class="bio" aria-label="About">
-        <p>I study how democratization and electoral reform changed political representation, using two centuries of debate in the Belgian parliament.</p>
-        <p>My fields are political economy, economic history and urban economics, and I work with text as data. I built a dataset of the plenary speeches of the Belgian Chamber of Representatives since 1831, linked to the members who delivered them, and I use it to measure what parliament attends to and how far apart its parties speak, around franchise extensions, proportional representation and the linguistic split of the party system. A second line of work uses geospatial data from historical maps to study railways and transport networks and their political effects.</p>
-        <p>Before my PhD, I studied economics at Bocconi University and at UCLouvain (joint MSc), and worked as a research assistant for James M. Snyder and Marco Tabellini at Harvard and for Stefano Gagliarducci at the University of Rome Tor Vergata.</p>
-
-        <!-- Spazio per gli annunci, se e quando serviranno: togli i segni di commento per attivarlo
-        <p class="news"><strong>News.</strong> Qui una riga su un seminario, una conferenza o un paper nuovo.</p>
-        -->
-      </section>
-
-      <footer class="colophon">
-        <p>VIVES Research Centre, KU Leuven, Leuven, Belgium &nbsp;||&nbsp; <a href="mailto:riccardo.graziani@kuleuven.be">riccardo.graziani@kuleuven.be</a></p>
-      </footer>
-
-    </div>
 
     <header class="sidebar">
       <svg class="hemicycle" viewBox="0 0 120 64" aria-hidden="true" focusable="false">
@@ -354,6 +330,31 @@ a:focus-visible, summary:focus-visible {
         <a href="https://www.linkedin.com/in/riccardo-graziani-2a2801192">LinkedIn</a>
       </nav>
     </header>
+
+    <div class="content">
+
+      <nav class="mainnav" aria-label="Pages">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="research.html">Research</a>
+      </nav>
+
+      <!-- DA MODIFICARE: presentazione, adattala liberamente -->
+      <section class="bio" aria-label="About">
+        <p>I study how democratization and electoral reform changed political representation, using two centuries of debate in the Belgian parliament.</p>
+        <p>My fields are political economy, economic history and urban economics, and I work with text as data. I built a dataset of the plenary speeches of the Belgian Chamber of Representatives since 1831, linked to the members who delivered them, and I use it to measure what parliament attends to and how far apart its parties speak, around franchise extensions, proportional representation and the linguistic split of the party system. A second line of work uses geospatial data from historical maps to study railways and transport networks and their political effects.</p>
+        <p>Before my PhD, I studied economics at Bocconi University and at UCLouvain (joint MSc), and worked as a research assistant for James M. Snyder and Marco Tabellini at Harvard and for Stefano Gagliarducci at the University of Rome Tor Vergata.</p>
+
+        <!-- Spazio per gli annunci, se e quando serviranno: togli i segni di commento per attivarlo
+        <p class="news"><strong>News.</strong> Qui una riga su un seminario, una conferenza o un paper nuovo.</p>
+        -->
+      </section>
+
+      <footer class="colophon">
+        <p>VIVES Research Centre, KU Leuven, Leuven, Belgium &nbsp;||&nbsp; <a href="mailto:riccardo.graziani@kuleuven.be">riccardo.graziani@kuleuven.be</a></p>
+      </footer>
+
+    </div>
+
   </main>
 </body>
 </html>
