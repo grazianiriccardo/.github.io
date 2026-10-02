@@ -160,13 +160,22 @@ a:focus-visible, summary:focus-visible {
   line-height: 1.15;
 }
 .group {
-  margin: 2.25rem 0 1.1rem;
+  margin: 2rem 0 1.1rem;
+  padding-top: 0.85rem;
+  border-top: 2px solid var(--ink);
   font-size: 1rem;
   font-weight: 600;
   color: var(--muted);
 }
-.group:first-of-type { margin-top: 0; }
-.paper { margin: 0 0 1.75rem; max-width: 40rem; }
+.group:first-of-type { margin-top: 0.75rem; }
+.paper {
+  max-width: 40rem;
+  margin: 0 0 1.25rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--rule);
+}
+/* niente filetto sottile subito prima di una sottosezione o del piè di pagina */
+.paper:has(+ .group), .paper:last-child { padding-bottom: 0; border-bottom: none; }
 .paper-title {
   margin: 0;
   font-family: var(--display);

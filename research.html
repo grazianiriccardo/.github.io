@@ -70,7 +70,7 @@ a:focus-visible, summary:focus-visible {
 /* Due colonne: a sinistra chi sei, a destra il contenuto */
 .page {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 17rem;
+  grid-template-columns: 17rem minmax(0, 1fr);
   gap: clamp(1.75rem, 5vw, 3.5rem);
   align-items: start;
   max-width: 60rem;
@@ -135,7 +135,7 @@ a:focus-visible, summary:focus-visible {
 }
 .mainnav a[aria-current="page"] { color: var(--ink); text-decoration: none; }
 
-.bio p { margin: 0 0 1.1rem; max-width: 38rem; }
+.bio p { margin: 0 0 1.1rem; max-width: 38rem; text-align: justify; hyphens: auto; }
 .bio p:last-child { margin-bottom: 0; }
 .news { margin-top: 1.5rem; }
 
@@ -148,13 +148,22 @@ a:focus-visible, summary:focus-visible {
   line-height: 1.15;
 }
 .group {
-  margin: 2.25rem 0 1.1rem;
+  margin: 2rem 0 1.1rem;
+  padding-top: 0.85rem;
+  border-top: 2px solid var(--ink);
   font-size: 1rem;
   font-weight: 600;
   color: var(--muted);
 }
-.group:first-of-type { margin-top: 0; }
-.paper { margin: 0 0 1.75rem; max-width: 40rem; }
+.group:first-of-type { margin-top: 0.75rem; }
+.paper {
+  max-width: 40rem;
+  margin: 0 0 1.25rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--rule);
+}
+/* niente filetto sottile subito prima di una sottosezione o del piè di pagina */
+.paper:has(+ .group), .paper:last-child { padding-bottom: 0; border-bottom: none; }
 .paper-title {
   margin: 0;
   font-family: var(--display);
@@ -224,68 +233,6 @@ a:focus-visible, summary:focus-visible {
 <body>
   <main class="page">
 
-
-    <div class="content">
-
-      <nav class="mainnav" aria-label="Pages">
-        <a href="index.html">Home</a>
-        <a href="research.html" aria-current="page">Research</a>
-      </nav>
-
-      <section class="research" aria-labelledby="research-heading">
-        <h1 class="pagetitle" id="research-heading">Research</h1>
-
-        <h2 class="group">Working papers</h2>
-        <article class="paper">
-          <h3 class="paper-title"><a href="Graziani_Vanschoonbeek_Who_Speaks_abstract.pdf">Who Speaks for the People? Electoral Reforms, Parliamentary Speech, and Legislative Behaviour in Belgium, 1880–1912</a></h3>
-          <p class="jmp">Job Market Paper</p>
-          <p class="authors">with Jakob Vanschoonbeek</p>
-          <details class="abstract">
-            <summary>Abstract</summary>
-            <p>Does extending the franchise change what a parliament attends to, and if so, does it work by changing the behaviour of the politicians already in office or by changing who holds office? We study this question in Belgium, which introduced plural male suffrage in 1894 and proportional representation in 1900, using a new dataset that links the plenary interventions of both chambers of parliament between 1880 and 1912 to the speaker’s party and constituency, and to the bills that members introduced. The share of each intervention devoted to labour and social policy is measured by a transformer classifier trained for this corpus and validated against blind human coding. Because its eligibility census prevented working-class candidates from entering the Senate, the difference between the two chambers identifies the Chamber’s differential response to electoral exposure, net of shocks common to both chambers, such as the strikes and unrest that produced the reforms. After enfranchisement, the Chamber’s attention to the social question rose by 4.5 percentage points relative to the Senate’s, on a base of 7.9, everywhere in the country and mainly among sitting deputies. Proportional representation produced no aggregate shift but a large effect in the coalfields, where it reopened seats the majoritarian rule had handed to the socialists. It was driven by the entry of new members. Social bills deposited by Catholic and Liberal members rose after 1894, mostly among Catholics, and again after 1900, among Liberals. Enfranchisement thus raised attention to the social question across the country, while proportional representation restored it in the coalfields through the members it elected. Which channel operated was set by the part of the electoral system each reform changed.</p>
-          </details>
-        </article>
-        <article class="paper">
-          <h3 class="paper-title"><a href="Graziani_Vanschoonbeek_One_Reform_abstract.pdf">One Reform Divided the Elite, the Other Replaced It: Electoral Reform and Parliamentary Speech in the Belgian Belle Époque, 1880–1912</a></h3>
-          <p class="authors">with Jakob Vanschoonbeek</p>
-          <details class="abstract">
-            <summary>Abstract</summary>
-            <p>What makes a governing elite pull apart? Explanations of elite polarization emphasize demand-side drivers acting on the electorate, while the electoral institutions that structure competition figure as objects of elite choice rather than as causes of elite behaviour. We ask whether electoral reform can itself divide a governing elite, using two Belgian reforms that fall on opposite sides of that divide: plural manhood suffrage (1894), which reshaped the electorate, and proportional representation (1900), which reshaped how votes become seats. We measure elite polarization directly from parliamentary speech, applying the leave-out partisanship estimator of Gentzkow et al. (2019) to all plenary debates of both houses, 490,002 interventions over three decades. Identification exploits Belgium’s imperfect bicameralism as a difference in exposure: both houses were returned by the same enlarged electorate, but candidacy rules the reforms left untouched kept the new competitor out of the upper house, so the Chamber debated with socialists in it and the Senate did not; the contrast nets out the national shocks common to both. The reaction is asymmetric. Plural suffrage produced a rise in Catholic–Liberal distinctiveness that is timed to the reform—the 1894 break is the largest of the fifteen feasible cutoff dates—persistent to the end of the window, and driven by the within-politician adaptation of sitting members—Catholic incumbents in particular—rather than by turnover; the divergence is overwhelmingly within-topic, and largest on labour and social policy. Proportional representation did not move that distance. What it moved was the composition of the chamber: the post-1900 divergence loads on entrants rather than on sitting members, the coal districts return Catholic members who had all but vanished from them after 1894—seven deputies between the reforms, thirty-nine after—and our companion study finds the same recomposition channel on the salience of labour (Graziani &amp; Vanschoonbeek, 2026). We do not read the flat Catholic–Liberal coefficient as an estimated zero: on that axis the bicameral contrast is attenuated by construction, so what we can say is that the rule change left no trace on the distance between the governing parties while visibly changing who sat between them. The two reforms acted on different margins. Enfranchisement changed how the sitting elite spoke; proportionality changed who was there to speak.</p>
-          </details>
-        </article>
-        <article class="paper">
-          <h3 class="paper-title">Anti-Revolutionary Roads? The Political Effects of Belgium’s Workmen’s Trains</h3>
-          <p class="authors">with Jakob Vanschoonbeek</p>
-          <details class="abstract">
-            <summary>Abstract</summary>
-            <p>Between 1885 and 1910 Belgium built one of the world’s densest light rail networks, partly as an instrument of political containment: the governing Catholic and Liberal parties hoped that letting workers reach city jobs while living in the countryside would shield them from the rising socialist movement, while the socialists hoped the same connectivity would carry their ideas into the hinterland. Using newly assembled archival data on the network, demography, commuting, and local elections, I develop a quantitative spatial political economy model of location, commuting, and political choices to adjudicate between the two views. Because the political effect runs partly through the endogenous reallocation of the electorate, I identify it from the unexpected component of light-rail-induced gains in job market access and show that the network moved location and commuting alone, leaving wages and rents unchanged. It modestly tempered urbanisation, lowering agglomeration populations by up to two per cent, yet raised socialist vote shares where access improved most. Aggregated through the D’Hondt seat allocation rule, the network accounts for three parliamentary seats that passed to the left rather than the Catholics, slimming the governing majority from a counterfactual thirteen seats to seven. The incumbents’ counter-revolutionary instrument, in short, modestly hastened the rise it was built to forestall.</p>
-          </details>
-        </article>
-
-        <h2 class="group">Data papers</h2>
-        <article class="paper">
-          <h3 class="paper-title"><a href="Graziani_Belgian_Chamber_Debates_abstract.pdf">The Belgian Chamber Debates Dataset: Speeches, Roll-Call Votes and Member Biographies, 1831–2025</a></h3>
-          <details class="abstract">
-            <summary>Abstract</summary>
-            <p>In this Data Descriptor, we introduce a dataset on the plenary speeches of the Belgian Chamber of Representatives and the background characteristics of the members who speak in it. The database includes all plenary speeches from the first sitting of the Chamber, in 1831, to the end of 2025, linked to the members and ministers who delivered them, together with the roll-call votes cast in the same sittings. These data have been used in previous studies to analyze how plural voting and proportional representation changed what the Chamber talked about and how far apart its parties spoke. The long time period, from census suffrage to the federal state, makes it possible to study how historical changes are reflected in parliamentary speeches.</p>
-          </details>
-        </article>
-
-        <h2 class="group">Selected Work in progress</h2>
-        <article class="paper">
-          <h3 class="paper-title"><a href="Graziani_Partisanship_Belgian_Speech_abstract.pdf">Partisanship in Belgian Parliamentary Speech: Evidence from the Chamber of Representatives, 1831–2025</a></h3>
-          <details class="abstract">
-            <summary>Abstract</summary>
-            <p>How polarized has Belgian politics been over the long run, and how did partisanship respond to the extensions of the suffrage, to proportional representation and to the split of the parties along linguistic lines? This project measures partisanship in the speeches of the Belgian Chamber of Representatives from its first sitting in 1831 to 2025, with the method that Gentzkow, Shapiro and Taddy (2019) developed for the US Congress and that Simola, Nieminen and Tukiainen (2025) applied to a century of Finnish parliamentary speech. Partisanship is the expected posterior probability that a neutral observer, after hearing one phrase of a member’s speech, places on the member’s true party. The data are the Belgian Chamber Debates dataset (Graziani 2026): more than two million speeches linked to the speaker’s party, district and biography. Belgium allows three extensions of the existing evidence. The series begins under census suffrage, so it spans the whole transition from an elite electorate to mass democracy. The party system grew out of three cleavages—religious, socioeconomic and linguistic—that can be measured as separate splits. And the debates are held in two languages, so partisanship has to be separated from language itself.</p>
-          </details>
-        </article>
-      </section>
-
-      <footer class="colophon">
-        <p>VIVES Research Centre, KU Leuven, Leuven, Belgium &nbsp;||&nbsp; <a href="mailto:riccardo.graziani@kuleuven.be">riccardo.graziani@kuleuven.be</a></p>
-      </footer>
-
-    </div>
 
     <header class="sidebar">
       <svg class="hemicycle" viewBox="0 0 120 64" aria-hidden="true" focusable="false">
@@ -371,6 +318,69 @@ a:focus-visible, summary:focus-visible {
 
 
     </header>
+
+    <div class="content">
+
+      <nav class="mainnav" aria-label="Pages">
+        <a href="index.html">Home</a>
+        <a href="research.html" aria-current="page">Research</a>
+      </nav>
+
+      <section class="research" aria-labelledby="research-heading">
+        <h1 class="pagetitle" id="research-heading">Research</h1>
+
+        <h2 class="group">Working papers</h2>
+        <article class="paper">
+          <h3 class="paper-title"><a href="Graziani_Vanschoonbeek_Who_Speaks_abstract.pdf">Who Speaks for the People? Electoral Reforms, Parliamentary Speech, and Legislative Behaviour in Belgium, 1880–1912</a></h3>
+          <p class="jmp">Job Market Paper</p>
+          <p class="authors">with Jakob Vanschoonbeek</p>
+          <details class="abstract">
+            <summary>Abstract</summary>
+            <p>Does extending the franchise change what a parliament attends to, and if so, does it work by changing the behaviour of the politicians already in office or by changing who holds office? We study this question in Belgium, which introduced plural male suffrage in 1894 and proportional representation in 1900, using a new dataset that links the plenary interventions of both chambers of parliament between 1880 and 1912 to the speaker’s party and constituency, and to the bills that members introduced. The share of each intervention devoted to labour and social policy is measured by a transformer classifier trained for this corpus and validated against blind human coding. Because its eligibility census prevented working-class candidates from entering the Senate, the difference between the two chambers identifies the Chamber’s differential response to electoral exposure, net of shocks common to both chambers, such as the strikes and unrest that produced the reforms. After enfranchisement, the Chamber’s attention to the social question rose by 4.5 percentage points relative to the Senate’s, on a base of 7.9, everywhere in the country and mainly among sitting deputies. Proportional representation produced no aggregate shift but a large effect in the coalfields, where it reopened seats the majoritarian rule had handed to the socialists. It was driven by the entry of new members. Social bills deposited by Catholic and Liberal members rose after 1894, mostly among Catholics, and again after 1900, among Liberals. Enfranchisement thus raised attention to the social question across the country, while proportional representation restored it in the coalfields through the members it elected. Which channel operated was set by the part of the electoral system each reform changed.</p>
+          </details>
+        </article>
+        <article class="paper">
+          <h3 class="paper-title"><a href="Graziani_Vanschoonbeek_One_Reform_abstract.pdf">One Reform Divided the Elite, the Other Replaced It: Electoral Reform and Parliamentary Speech in the Belgian Belle Époque, 1880–1912</a></h3>
+          <p class="authors">with Jakob Vanschoonbeek</p>
+          <details class="abstract">
+            <summary>Abstract</summary>
+            <p>What makes a governing elite pull apart? Explanations of elite polarization emphasize demand-side drivers acting on the electorate, while the electoral institutions that structure competition figure as objects of elite choice rather than as causes of elite behaviour. We ask whether electoral reform can itself divide a governing elite, using two Belgian reforms that fall on opposite sides of that divide: plural manhood suffrage (1894), which reshaped the electorate, and proportional representation (1900), which reshaped how votes become seats. We measure elite polarization directly from parliamentary speech, applying the leave-out partisanship estimator of Gentzkow et al. (2019) to all plenary debates of both houses, 490,002 interventions over three decades. Identification exploits Belgium’s imperfect bicameralism as a difference in exposure: both houses were returned by the same enlarged electorate, but candidacy rules the reforms left untouched kept the new competitor out of the upper house, so the Chamber debated with socialists in it and the Senate did not; the contrast nets out the national shocks common to both. The reaction is asymmetric. Plural suffrage produced a rise in Catholic–Liberal distinctiveness that is timed to the reform—the 1894 break is the largest of the fifteen feasible cutoff dates—persistent to the end of the window, and driven by the within-politician adaptation of sitting members—Catholic incumbents in particular—rather than by turnover; the divergence is overwhelmingly within-topic, and largest on labour and social policy. Proportional representation did not move that distance. What it moved was the composition of the chamber: the post-1900 divergence loads on entrants rather than on sitting members, the coal districts return Catholic members who had all but vanished from them after 1894—seven deputies between the reforms, thirty-nine after—and our companion study finds the same recomposition channel on the salience of labour (Graziani &amp; Vanschoonbeek, 2026). We do not read the flat Catholic–Liberal coefficient as an estimated zero: on that axis the bicameral contrast is attenuated by construction, so what we can say is that the rule change left no trace on the distance between the governing parties while visibly changing who sat between them. The two reforms acted on different margins. Enfranchisement changed how the sitting elite spoke; proportionality changed who was there to speak.</p>
+          </details>
+        </article>
+        <article class="paper">
+          <h3 class="paper-title">Anti-Revolutionary Roads? The Political Effects of Belgium’s Workmen’s Trains</h3>
+          <p class="authors">with Jakob Vanschoonbeek</p>
+          <details class="abstract">
+            <summary>Abstract</summary>
+            <p>Between 1885 and 1910 Belgium built one of the world’s densest light rail networks, partly as an instrument of political containment: the governing Catholic and Liberal parties hoped that letting workers reach city jobs while living in the countryside would shield them from the rising socialist movement, while the socialists hoped the same connectivity would carry their ideas into the hinterland. Using newly assembled archival data on the network, demography, commuting, and local elections, I develop a quantitative spatial political economy model of location, commuting, and political choices to adjudicate between the two views. Because the political effect runs partly through the endogenous reallocation of the electorate, I identify it from the unexpected component of light-rail-induced gains in job market access and show that the network moved location and commuting alone, leaving wages and rents unchanged. It modestly tempered urbanisation, lowering agglomeration populations by up to two per cent, yet raised socialist vote shares where access improved most. Aggregated through the D’Hondt seat allocation rule, the network accounts for three parliamentary seats that passed to the left rather than the Catholics, slimming the governing majority from a counterfactual thirteen seats to seven. The incumbents’ counter-revolutionary instrument, in short, modestly hastened the rise it was built to forestall.</p>
+          </details>
+        </article>
+
+        <h2 class="group">Data papers</h2>
+        <article class="paper">
+          <h3 class="paper-title"><a href="Graziani_Belgian_Chamber_Debates_abstract.pdf">The Belgian Chamber Debates Dataset: Speeches, Roll-Call Votes and Member Biographies, 1831–2025</a></h3>
+          <details class="abstract">
+            <summary>Abstract</summary>
+            <p>In this Data Descriptor, we introduce a dataset on the plenary speeches of the Belgian Chamber of Representatives and the background characteristics of the members who speak in it. The database includes all plenary speeches from the first sitting of the Chamber, in 1831, to the end of 2025, linked to the members and ministers who delivered them, together with the roll-call votes cast in the same sittings. These data have been used in previous studies to analyze how plural voting and proportional representation changed what the Chamber talked about and how far apart its parties spoke. The long time period, from census suffrage to the federal state, makes it possible to study how historical changes are reflected in parliamentary speeches.</p>
+          </details>
+        </article>
+
+        <h2 class="group">Selected Work in progress</h2>
+        <article class="paper">
+          <h3 class="paper-title"><a href="Graziani_Partisanship_Belgian_Speech_abstract.pdf">Partisanship in Belgian Parliamentary Speech: Evidence from the Chamber of Representatives, 1831–2025</a></h3>
+          <details class="abstract">
+            <summary>Abstract</summary>
+            <p>How polarized has Belgian politics been over the long run, and how did partisanship respond to the extensions of the suffrage, to proportional representation and to the split of the parties along linguistic lines? This project measures partisanship in the speeches of the Belgian Chamber of Representatives from its first sitting in 1831 to 2025, with the method that Gentzkow, Shapiro and Taddy (2019) developed for the US Congress and that Simola, Nieminen and Tukiainen (2025) applied to a century of Finnish parliamentary speech. Partisanship is the expected posterior probability that a neutral observer, after hearing one phrase of a member’s speech, places on the member’s true party. The data are the Belgian Chamber Debates dataset (Graziani 2026): more than two million speeches linked to the speaker’s party, district and biography. Belgium allows three extensions of the existing evidence. The series begins under census suffrage, so it spans the whole transition from an elite electorate to mass democracy. The party system grew out of three cleavages—religious, socioeconomic and linguistic—that can be measured as separate splits. And the debates are held in two languages, so partisanship has to be separated from language itself.</p>
+          </details>
+        </article>
+      </section>
+
+      <footer class="colophon">
+        <p>VIVES Research Centre, KU Leuven, Leuven, Belgium &nbsp;||&nbsp; <a href="mailto:riccardo.graziani@kuleuven.be">riccardo.graziani@kuleuven.be</a></p>
+      </footer>
+
+    </div>
+
   </main>
 </body>
 </html>
