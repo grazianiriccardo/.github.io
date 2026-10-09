@@ -3,6 +3,7 @@
   Pagina iniziale del sito di Riccardo Graziani.
 
   Come modificarlo: cerca "DA MODIFICARE" in questo file.
+  Quando il sito è pronto per essere trovato, cerca "DA TOGLIERE" (anche in research.html).
 
   File da caricare insieme, con questi nomi esatti (maiuscole comprese):
     research.html
@@ -20,6 +21,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <!-- DA TOGLIERE quando il sito è pronto: chiede ai motori di ricerca di non indicizzare la pagina e di non seguirne i link -->
+  <meta name="robots" content="noindex, nofollow">
   <title>Riccardo Graziani | Economics, KU Leuven</title>
   <meta name="description" content="Riccardo Graziani is a PhD researcher in economics at VIVES, KU Leuven, working on political economy, urban economics and economic history: democratization, parliamentary representation and transport networks.">
   <meta property="og:type" content="website">
@@ -184,7 +187,7 @@ a:focus-visible, summary:focus-visible {
 .paper-title a:hover { text-decoration-color: var(--chamber); }
 .authors { margin: 0.35rem 0 0; color: var(--muted); }
 .jmp { margin: 0.25rem 0 0; font-weight: 600; font-size: 0.9375rem; }
-.status { margin: 0.3rem 0 0; color: var(--muted); font-size: 0.9375rem; line-height: 1.45; }
+.note { margin: 0.2rem 0 0; color: var(--muted); font-size: 0.9375rem; }
 
 .abstract { margin-top: 0.55rem; }
 .abstract summary {
